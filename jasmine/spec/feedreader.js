@@ -108,7 +108,7 @@ $(
        */
       try {
         beforeEach(done => {
-          loadFeed(0, done);
+          loadFeed(0, ()=>done());
         });
 
         it("feed load completed", done => {
